@@ -1,0 +1,35 @@
+<html>
+    <head>
+      <title> EOL remote interface </title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="form-box">
+        <h1> Login Here </h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" id="myInput">
+            <img src="EyeClosed.png" id="eyeIcon">
+        </div>
+        <button type="button" class="login-btn"> LOGIN </button>
+    </div>>
+
+            <script>
+                       let eyeIcon = document.getElementById("eyeIcon")
+                       let myInput = document.getElementById("myInput")
+
+                       eyeIcon.onclick = function(){
+                            if(myInput.type == "password"){
+                                    myInput.type = "text";
+                                    eyeIcon.src = "EyeOpen.png";
+                            }else{
+                                    myInput.type = "password";
+                                    eyeIcon.src = "EyeClosed.png";
+                            }
+                       }
+            </script>
+    </body>
+</html>
+
